@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Content & Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to HTML5 Enhanced Content & Forms</h1>
+      <p>
+        This page demonstrates the use of lists, tables, media embedding, and a
+        fully structured HTML5 form with built-in validation.
+      </p>
+    </header>
+
+    <main>
+      <!-- Lists Section -->
+      <section>
+        <h2>Popular Web Technologies</h2>
+        <ul>
+          <li>HTML5 - For structuring content</li>
+          <li>CSS3 - For styling web pages</li>
+          <li>JavaScript - For interactivity</li>
+          <li>Python - For backend development</li>
+        </ul>
+      </section>
+
+      <!-- Table Section -->
+      <section>
+        <h2>Student Information Table</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+          <thead>
+            <tr>
+              <th>FullName</th>
+              <th>Email</th>
+              <th>Contact Number</th>
+              <th>Country</th>
+              <th>City</th>
+              <th>Age</th>
+              <th>Course</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>john.doe@email.com</td>
+              <td>+1 712345678</td>
+              <td>USA</td>
+              <td>New York</td>
+              <td>25</td>
+              <td>Web Development</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>jane.smith@email.com</td>
+              <td>+1 798765432</td>
+              <td>Canada</td>
+              <td>Toronto</td>
+              <td>28</td>
+              <td>Data Science</td>
+            </tr>
+            <tr>
+              <td>Sam Brown</td>
+              <td>sam.brown@email.com</td>
+              <td>+44 787654321</td>
+              <td>UK</td>
+              <td>London</td>
+              <td>22</td>
+              <td>UI/UX</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Media Section -->
+      <section>
+        <h2>Media Content</h2>
+        <img
+          src="https://images.pexels.com/photos/33145846/pexels-photo-33145846.jpeg"
+          width="400"
+          height="240"
+          alt="A scenic landscape photo from Pexels"
+        />
+        <audio controls>
+          <source
+            src="eona-emotional-ambient-pop-351436.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+        <video controls width="400" height="240">
+          <source
+            src="https://videos.pexels.com/video-files/9714260/9714260-uhd_2560_1440_30fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <!-- Form Section -->
+     <section>
+  <h2>Registration Form</h2>
+  <form action="#" method="POST">
+    <!-- Personal Information -->
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3"><br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" pattern="[0-9]{10}" required><br><br>
+    </fieldset>
+
+    <!-- Account Details -->
+    <fieldset>
+      <legend>Account Details</legend>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required autocomplete="username"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+    </fieldset>
+
+    <!-- Additional Information -->
+    <fieldset>
+      <legend>Additional Information</legend>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label for="bio">Short Bio:</label>
+      <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+    </fieldset>
+
+    <!-- Preferences -->
+    <fieldset>
+      <legend>Preferences</legend>
+      <label>
+        <input type="checkbox" name="newsletter" checked> Subscribe to HTML5 Newsletter
+      </label><br><br>
+
+      <label>
+        <input type="radio" name="updates" value="yes" required> Receive Updates
+      </label>
+      <label>
+        <input type="radio" name="updates" value="no" required> No Updates
+      </label>
+    </fieldset>
+
+    <!-- Terms & Conditions -->
+    <fieldset>
+      <legend>Terms & Conditions</legend>
+      <p>
+        Please read our <a href="#tc">Terms & Conditions</a> carefully before registering.
+      </p>
+      <label>
+        <input type="checkbox" name="terms" required> I agree to the Terms & Conditions
+      </label>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Terms & Conditions Section (viewable on same page) -->
+  <section id="tc">
+    <h3>Terms & Conditions</h3>
+    <p>By registering, you agree to:</p>
+    <ul>
+      <li>Provide accurate and truthful information during registration.</li>
+      <li>Comply with our website rules and community guidelines.</li>
+      <li>Allow us to store and process your data in accordance with our Privacy Policy.</li>
+      <li>Receive important account-related notifications via email.</li>
+    </ul>
+    <p>Failure to comply may result in account suspension.</p>
+  </section>
+</section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Week 2 HTML5 Assignment. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
